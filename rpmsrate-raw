@@ -451,9 +451,11 @@ PHOTO
 
 CAT_DATABASES
   5 postgresql9.0
-  3 mysql-client
+  3 mariadb-client
+  2 mysql-client
   CAT_DATABASES_SERVER
     4 postgresql9.0-server
+    4 mariadb
     3 mysql
     2 postgresql9.0-pltcl 
   CAT_DEVELOPMENT 

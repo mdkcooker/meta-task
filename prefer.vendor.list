@@ -24,6 +24,10 @@ perl-base
 libgl1
 lib64gl1
 
+# prefer zlib over uClibc-zlib
+libzlib1
+lib64zlib1
+
 # prefer openssh-askpass over openssh-askpass-gnome (for keychain)
 openssh-askpass
 
@@ -44,7 +48,7 @@ pulseaudio-esound-compat
 packagekit-gstreamer-plugin
 
 # kde4-config-file
-default-kde4-config
+distro-kde4-config-OpenMandriva
 
 # libbaconvideowidget.so.0 (totem backend)
 libbaconvideowidget-gstreamer0
@@ -66,6 +70,10 @@ ctags
 
 # uClibc-devel provides a few things similar to glibc-devel
 glibc-devel
+
+# prefer zlib-devel over uClibc-zlib-devel
+libzlib-devel
+lib64zlib-devel
 
 # prefer gcc over gcc3.3
 # (gcc-cpp and gcc-c++ are no more needed, but keeping just in case)
