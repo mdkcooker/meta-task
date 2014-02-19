@@ -452,16 +452,14 @@ PHOTO
 CAT_DATABASES
   5 postgresql9.0
   3 mariadb-client
-  2 mysql-client
   CAT_DATABASES_SERVER
     4 postgresql9.0-server
     4 mariadb
-    3 mysql
     2 postgresql9.0-pltcl 
   CAT_DEVELOPMENT 
     4 perl-DBD-mysql
     3 postgresql9.0-devel
-    1 mysql-bench libmysql-devel
+    1 mariadb-bench libmariadb-devel
 
 CAT_GAMES
   5 digger
