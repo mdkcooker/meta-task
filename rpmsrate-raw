@@ -111,6 +111,13 @@ TV
   3 xawtv
   3 zapping
 
+CAT_MEDIA_CENTER
+  5 xbmc
+  4 xbmc-eventclient-j2me xbmc-eventclient-ps3 xbmc-eventclient-wiiremote
+  4 xbmc-eventclient-xbmc-send xbmc-eventclients-common
+  4 mythtv-frontend mythtv-backend mythtv-setup
+  4 task-media-center task-all-codecs
+
 CAT_OFFICE
   5 CAT_KDE || CAT_GNOME || CAT_XFCE libreoffice-writer libreoffice-calc libreoffice-impress libreoffice-base libreoffice-math libreoffice-draw
   4 CAT_KDE || CAT_GNOME || CAT_XFCE libreoffice-filter-binfilter libreoffice-pdfimport libreoffice-presentation-minimizer libreoffice-presenter-screen libreoffice-wiki-publisher libreoffice-languagetool

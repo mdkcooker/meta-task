@@ -186,8 +186,13 @@ N_("Graphical Environment") =>
   },
   if_(!$light,
   { label => N_("Other Graphical Desktops"),
-    descr => N_("Window Maker, Enlightenment, Fvwm, etc"),
+    descr => N_("Window Maker, Enlightenment, Fvwm, etc."),
     flags => [ qw(GRAPHICAL_DESKTOP X ACCESSIBILITY E17) ], 
+  },
+  { label => N_("Media Center"),
+    descr => N_("XBMC, MythTV, etc."),
+    flags => [ qw(MEDIA_CENTER X AUDIO VIDEO GRAPHICS) ],
+    required => [ 'task-media-center', 'task-all-codecs' ],
   },
   ),
 ],
@@ -244,9 +249,7 @@ foreach my $path (keys %$h) {
 }
 
 sub _filter {
-
     grep { $_->{required} ? (any { install::pkgs::packageByName($::o->{packages}, $_) } @{$_->{required}}) : 1 } map { @$_ } @_;
-
 }
 
 my $compssUsers = [ _filter(values %$h) ];
