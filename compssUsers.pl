@@ -1,7 +1,9 @@
 package tmp::compssUsers;
 
+use lib qw(/usr/lib/libDrakX);
 use common;
 use install::pkgs;
+# perl_checker: use detect_devices
 
 my $low_resources = detect_devices::has_low_resources();
 my $netbook_desktop = detect_devices::is_netbook_nettop();
@@ -225,7 +227,7 @@ N_("Utilities") =>
     flags => [ qw(MONITORING NETWORKING_FILE) ],
     default_selected => 1,
   },
-  { label => N_("Distribution Wizards"),
+  { label => N_("DrakX Wizards"),
     descr => N_("Wizards to configure server"),
     flags => [ qw(WIZARDS) ],
     default_selected => 1,
@@ -243,7 +245,7 @@ foreach my $path (keys %$h) {
 
 sub _filter {
 
-    grep { $_->{required} ? (any { install::pkgs::packageByName($::o->{packages}, $_ ) } @{$_->{required}}) : 1 } map { @$_ } @_;
+    grep { $_->{required} ? (any { install::pkgs::packageByName($::o->{packages}, $_) } @{$_->{required}}) : 1 } map { @$_ } @_;
 
 }
 
@@ -252,10 +254,10 @@ my $compssUsers = [ _filter(values %$h) ];
 my $gtk_display_compssUsers = sub {
     my ($entry) = @_;
 
-    require ugtk2;
-    ugtk2->import(qw(:helpers :wrappers :create));
-    require mygtk2;
-    mygtk2->import(qw(gtknew));
+    require ugtk3;
+    ugtk3->import(qw(:helpers :wrappers :create));
+    require mygtk3;
+    mygtk3->import(qw(gtknew));
 
     my $entries_in_path = sub {
 	my ($path) = @_;
@@ -269,22 +271,20 @@ my $gtk_display_compssUsers = sub {
             push @items, @last_items;
         }
 
-	gtknew('Title2', label => mygtk2::asteriskize(translate($path))),
+	gtknew('Title2', label => mygtk3::asteriskize(translate($path))),
           gtknew('Table', children => [ group_by2(@items) ], homogeneous => 1),
-            Gtk2::HSeparator->new;
+            Gtk3::HSeparator->new;
     };
 
-    gtkpack__(Gtk2::VBox->new,
-				    $entries_in_path->('Workstation'),
-				    $server ? $entries_in_path->('Server') : (),
-				    $server ? (
-				      $entries_in_path->('Graphical Environment'),
-				      $entries_in_path->('Development'),
-				      $entries_in_path->('Utilities'),
-				    ) : (
-				      $light ? () : $entries_in_path->('Server'),
-				      $entries_in_path->('Graphical Environment'),
-                                    ),
+    gtkpack__(Gtk3::VBox->new,
+	      $entries_in_path->('Workstation'),
+	      $entries_in_path->('Server'),
+	      $entries_in_path->('Graphical Environment'),
+	      $server ? (
+		  $entries_in_path->('Development'),
+		  $entries_in_path->('Utilities'),
+	      ) : (
+	      ),
 	    );
 };
 
