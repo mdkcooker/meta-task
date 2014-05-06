@@ -1,5 +1,10 @@
 # Default distribution release
-distro-release-OpenMandriva
+distro-release-Moondrake
+distro-theme-Moondrake
+distro-theme-Moondrake-screensaver
+distro-theme-Moondrake-grub2
+sound-theme-Moondrake
+faces-Moondrake
 
 ########## base ################################################################
 # webfetch
@@ -48,7 +53,7 @@ pulseaudio-esound-compat
 packagekit-gstreamer-plugin
 
 # kde4-config-file
-distro-kde4-config-OpenMandriva
+distro-kde4-config-Moondrake
 
 # libbaconvideowidget.so.0 (totem backend)
 libbaconvideowidget-gstreamer0
