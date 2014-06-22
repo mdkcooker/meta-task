@@ -17,7 +17,7 @@ CAT_LSB
   5 CAT_KDE lsb-qt4
 
 CAT_LXDE
-  5 task-lxde mandriva-lxde-config
+  5 task-lxde distro-lxde-config
   5 lxdm
   4 lxrandr lxinput lxlauncher lxmenu-data
   4 lxde-icon-theme lxmusic lxnm lxpanel
@@ -51,7 +51,10 @@ CAT_GNOME
 
 CAT_KDE
   5 task-kde4
+  5 moondrake-kde4-config
   5 glxinfo
+  5 rosa-launcher
+  5 rosapanel
   5 kdm
   5 kde-l10n-ar kde-l10n-bg kde-l10n-ca kde-l10n-ca-valencia kde-l10n-cs kde-l10n-da kde-l10n-de kde-l10n-el kde-l10n-es kde-l10n-et kde-l10n-eu kde-l10n-fi kde-l10n-fr kde-l10n-ga kde-l10n-gl kde-l10n-gu kde-l10n-he kde-l10n-hi kde-l10n-hr kde-l10n-hu kde-l10n-ia kde-l10n-id kde-l10n-is kde-l10n-it kde-l10n-ja kde-l10n-kk kde-l10n-km kde-l10n-kn kde-l10n-ko kde-l10n-lt kde-l10n-lv kde-l10n-nb kde-l10n-nl kde-l10n-nn kde-l10n-pa kde-l10n-pl kde-l10n-pt kde-l10n-ro kde-l10n-ru kde-l10n-sk kde-l10n-sl kde-l10n-sr kde-l10n-sv kde-l10n-th kde-l10n-tr kde-l10n-uk kde-l10n-wa
   5 zip
@@ -661,7 +664,7 @@ CAT_X
     LOCALES"zh_CN" fonts-ttf-default-zh_CN
     LOCALES"zh_TW" LIVE fonts-ttf-wqy-microhei
     LOCALES"zh_TW" !LIVE fonts-ttf-chinese
-  5 CAT_THEMES mandriva-gfxboot-theme faces-tuxlets
+  5 CAT_THEMES distro-theme-Moondrake distro-theme-Moondrake-grub2 distro-theme-Moondrake-screensaver faces-moondrake faces-tuxlets
   4 META_CLASS"download" || META_CLASS"light" mandriva-theme-Free mandriva-theme-Free-screensaver
   4 META_CLASS"desktop" mandriva-theme-One mandriva-theme-One-screensaver
   4 META_CLASS"powerpack" mandriva-theme-Powerpack mandriva-theme-Powerpack-screensaver
@@ -685,6 +688,7 @@ CAT_SYSTEM
     locales iputils urpmi msec tmpwatch dracut acpi acpid
 
   5 SMP irqbalance
+  5 distro-release-Moondrake
   5 META_CLASS"download" || META_CLASS"light" mandriva-release-Free
   5 META_CLASS"desktop" mandriva-release-One
   5 META_CLASS"powerpack" mandriva-release-Powerpack
@@ -814,7 +818,7 @@ LIVE
   5 CAT_FILE_TOOLS davfs2
   5 CAT_FILE_TOOLS hfsutils
   4 CAT_FILE_TOOLS reiser4progs
-  5 CAT_SYSTEM ntp
+  5 CAT_SYSTEM chrony
   5 CAT_SYSTEM dhcpcd zcip
   5 CAT_SYSTEM rp-pppoe ppp-pppoatm pptp-linux bpalogin
   5 CAT_SYSTEM b43-fwcutter ndiswrapper
