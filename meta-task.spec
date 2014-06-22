@@ -29,6 +29,9 @@ packages when there is a choice.
 "rpmsrate" and "compsUsers.pl" are used by installer and rpmdrake to choose
 packages to install.
 
+%prep
+%setup -q -c -T
+
 %build
 cp %{SOURCE1} .
 cp %{SOURCE4} .
