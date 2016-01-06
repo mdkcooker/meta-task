@@ -36,7 +36,7 @@ lib64zlib1
 # prefer openssh-askpass over openssh-askpass-gnome (for keychain)
 openssh-askpass
 
-# python 2.7
+# python 3.4
 python
 
 ########## multimedia ##########################################################
@@ -53,7 +53,7 @@ pulseaudio-esound-compat
 packagekit-gstreamer-plugin
 
 # kde4-config-file
-distro-kde4-config-Moondrake
+distro-kde4-config-OpenMandriva
 
 # libbaconvideowidget.so.0 (totem backend)
 libbaconvideowidget-gstreamer0
@@ -61,6 +61,9 @@ lib64baconvideowidget-gstreamer0
 
 # phonon-backend
 phonon-gstreamer
+
+# phonon4qt5-backend
+phonon4qt5-gstreamer
 
 # amarok (KDE4 version)
 amarok
@@ -137,7 +140,8 @@ polkit-gnome
 pinentry-qt4
 
 # java
-java-1.7.0-openjdk
+java-1.8.0-openjdk
+java-1.8.0-openjdk-devel
 
 # java plugin
 icedtea-web
