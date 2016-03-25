@@ -1,11 +1,3 @@
-# Default distribution release
-distro-release-Moondrake
-distro-theme-Moondrake
-distro-theme-Moondrake-screensaver
-distro-theme-Moondrake-grub2
-sound-theme-Moondrake
-faces-Moondrake
-
 ########## base ################################################################
 # webfetch
 curl
@@ -33,7 +25,7 @@ lib64gl1
 libzlib1
 lib64zlib1
 
-# prefer openssh-askpass over openssh-askpass-gnome (for keychain)
+# prefer openssh-askpass over openssh-askpass-gnome (for keychain) and lxqt-openssh-askpass
 openssh-askpass
 
 # python 3.4
@@ -101,7 +93,7 @@ nfs-utils
 apache-mpm-prefork
 
 # ftpserver
-proftpd
+vsftpd
 
 # portmapper
 portmap
@@ -134,10 +126,10 @@ lxsession-lite
 drupal-mysqli
 
 # polkit-agent
-polkit-gnome
+polkit-kde-agent-1
 
 # pinentry
-pinentry-qt4
+pinentry-qt5
 
 # java
 java-1.8.0-openjdk
