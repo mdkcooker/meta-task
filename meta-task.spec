@@ -10,6 +10,7 @@ Source2:	compssUsers.pl
 Source3:	prefer.vendor.list
 Source4:	README
 BuildArch:	noarch
+BuildRequires:	drakxtools-backend
 
 # https://qa.mandriva.com/show_bug.cgi?id=64814 (texlive update crashes system)
 # Need to remove these packages first, because texlive packages were reworked
