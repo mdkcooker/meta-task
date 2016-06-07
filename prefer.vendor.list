@@ -31,6 +31,9 @@ openssh-askpass
 # python 3.4
 python
 
+# kernel-headers
+kernel-release-headers
+
 ########## multimedia ##########################################################
 # festival-voice
 festvox-kallpc16k
