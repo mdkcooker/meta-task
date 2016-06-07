@@ -1,7 +1,7 @@
 Name:		meta-task
 Summary:	Meta task listing packages by group
 Version:	2015.0
-Release:	5
+Release:	7
 License:	GPLv2+
 Group:		System/Configuration/Other
 Source0:	rpmsrate-raw
@@ -10,9 +10,7 @@ Source2:	compssUsers.pl
 Source3:	prefer.vendor.list
 Source4:	README
 BuildArch:	noarch
-%ifarch %{ix86} x86_64
 BuildRequires:	drakxtools-backend
-%endif
 
 # https://qa.mandriva.com/show_bug.cgi?id=64814 (texlive update crashes system)
 # Need to remove these packages first, because texlive packages were reworked
