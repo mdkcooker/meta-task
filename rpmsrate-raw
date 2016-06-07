@@ -623,7 +623,7 @@ CAT_X
   5 LOCALES"th" fcitx-table-other
   5 LOCALES"zh" fcitx-libpinyin fcitx-chewing fcitx-table-extra
   5 LOCALES"zh_TW" fcitx-chewing
-  5 CAT_KDE LOCALES"am" || LOCALES"as" || LOCALES"bn" || LOCALES"gu" || LOCALES"hi" || LOCALES"ja" || LOCALES"km" || LOCALES"kn" || LOCALES"ko" || LOCALES"ml" || LOCALES"mr" || LOCALES"ne" || LOCALES"pa_IN" || LOCALES"ta" || LOCALES"th" || LOCALES"vi" || LOCALES"zh" || LOCALES"zh_TW" fctix-qt5
+  5 CAT_KDE LOCALES"am" || LOCALES"as" || LOCALES"bn" || LOCALES"gu" || LOCALES"hi" || LOCALES"ja" || LOCALES"km" || LOCALES"kn" || LOCALES"ko" || LOCALES"ml" || LOCALES"mr" || LOCALES"ne" || LOCALES"pa_IN" || LOCALES"ta" || LOCALES"th" || LOCALES"vi" || LOCALES"zh" || LOCALES"zh_TW" fcitx-qt5
 
   4 vim-enhanced
 

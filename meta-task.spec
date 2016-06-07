@@ -1,7 +1,7 @@
 Name:		meta-task
 Summary:	Meta task listing packages by group
 Version:	2015.0
-Release:	7
+Release:	8
 License:	GPLv2+
 Group:		System/Configuration/Other
 Source0:	rpmsrate-raw
