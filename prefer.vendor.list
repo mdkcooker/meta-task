@@ -47,9 +47,6 @@ pulseaudio-esound-compat
 # gst-install-plugins-helper
 packagekit-gstreamer-plugin
 
-# kde4-config-file
-distro-kde4-config-OpenMandriva
-
 # libbaconvideowidget.so.0 (totem backend)
 libbaconvideowidget-gstreamer0
 lib64baconvideowidget-gstreamer0
@@ -120,7 +117,7 @@ notification-daemon
 docbook-utils
 
 # input method
-scim-bridge
+fcitx
 
 # lxde session manager
 lxsession-lite
@@ -140,3 +137,7 @@ java-1.8.0-openjdk-devel
 
 # java plugin
 icedtea-web
+
+# %{_lib}qt5-output-driver
+libqt5gui-x11
+lib64qt5gui-x11
