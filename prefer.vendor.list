@@ -141,3 +141,6 @@ icedtea-web
 # %{_lib}qt5-output-driver
 libqt5gui-x11
 lib64qt5gui-x11
+
+# pkgconfig
+pkgconf
