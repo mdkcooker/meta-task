@@ -5,8 +5,6 @@ distro-theme-Moondrake-screensaver
 distro-theme-Moondrake-grub2
 sound-theme-Moondrake
 faces-Moondrake
-faces-moondrake
-moondrake-kde4-config
 
 ########## base ################################################################
 # webfetch
@@ -35,11 +33,14 @@ lib64gl1
 libzlib1
 lib64zlib1
 
-# prefer openssh-askpass over openssh-askpass-gnome (for keychain)
+# prefer openssh-askpass over openssh-askpass-gnome (for keychain) and lxqt-openssh-askpass
 openssh-askpass
 
-# python 2.7
+# python 3.4
 python
+
+# kernel-headers
+kernel-release-headers
 
 ########## multimedia ##########################################################
 # festival-voice
@@ -54,15 +55,15 @@ pulseaudio-esound-compat
 # gst-install-plugins-helper
 packagekit-gstreamer-plugin
 
-# kde4-config-file
-distro-kde4-config-Moondrake
-
 # libbaconvideowidget.so.0 (totem backend)
 libbaconvideowidget-gstreamer0
 lib64baconvideowidget-gstreamer0
 
 # phonon-backend
 phonon-gstreamer
+
+# phonon4qt5-backend
+phonon4qt5-gstreamer
 
 # amarok (KDE4 version)
 amarok
@@ -100,7 +101,7 @@ nfs-utils
 apache-mpm-prefork
 
 # ftpserver
-proftpd
+vsftpd
 
 # portmapper
 portmap
@@ -124,7 +125,7 @@ notification-daemon
 docbook-utils
 
 # input method
-scim-bridge
+fcitx
 
 # lxde session manager
 lxsession-lite
@@ -133,13 +134,21 @@ lxsession-lite
 drupal-mysqli
 
 # polkit-agent
-polkit-gnome
+polkit-kde-agent-1
 
 # pinentry
-pinentry-qt4
+pinentry-qt5
 
 # java
-java-1.7.0-openjdk
+java-1.8.0-openjdk
+java-1.8.0-openjdk-devel
 
 # java plugin
 icedtea-web
+
+# %{_lib}qt5-output-driver
+libqt5gui-x11
+lib64qt5gui-x11
+
+# pkgconfig
+pkgconf

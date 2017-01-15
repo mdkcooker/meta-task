@@ -1,6 +1,6 @@
 Name:		meta-task
 Summary:	Meta task listing packages by group
-Version:	2014.5
+Version:	2017.0
 Release:	1
 License:	GPLv2+
 Group:		System/Configuration/Other

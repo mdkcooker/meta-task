@@ -620,14 +620,14 @@ CAT_X
 
   5 icewm-light monitor-edid
   5 HIGH_SECURITY mountloop
-  5 LOCALES"ja" ibus-anthy
-  5 LOCALES"ko" ibus-hangul
-  5 LOCALES"am || LOCALES"as" || LOCALES"bn" || LOCALES"hi" || LOCALES"gu" || LOCALES"km" || LOCALES"kn" || LOCALES"ml" || LOCALES"mr" || LOCALES"ne" || LOCALES"pa_IN" || LOCALES"ta" || LOCALES"th" || LOCALES"vi" || LOCALES"dz" ibus-m17n
-  5 LOCALES"th" ibus-table-thai
-  5 LOCALES"zh" ibus-pinyin ibus-table-wubi
-  5 LOCALES"zh_TW" ibus-chewing ibus-table-cangjie
-  5 CAT_KDE LOCALES"am" || LOCALES"as" || LOCALES"bn" || LOCALES"gu" || LOCALES"hi" || LOCALES"ja" || LOCALES"km" || LOCALES"kn" || LOCALES"ko" || LOCALES"ml" || LOCALES"mr" || LOCALES"ne" || LOCALES"pa_IN" || LOCALES"ta" || LOCALES"th" || LOCALES"vi" || LOCALES"zh" || LOCALES"zh_TW" ibus-qt4
-  
+  5 LOCALES"ja" fcitx-anthy
+  5 LOCALES"ko" fcitx-hangul
+  5 LOCALES"am || LOCALES"as" || LOCALES"bn" || LOCALES"hi" || LOCALES"gu" || LOCALES"km" || LOCALES"kn" || LOCALES"ml" || LOCALES"mr" || LOCALES"ne" || LOCALES"pa_IN" || LOCALES"ta" || LOCALES"th" || LOCALES"vi" || LOCALES"dz" fcitx-m17n
+  5 LOCALES"th" fcitx-table-other
+  5 LOCALES"zh" fcitx-libpinyin fcitx-chewing fcitx-table-extra
+  5 LOCALES"zh_TW" fcitx-chewing
+  5 CAT_KDE LOCALES"am" || LOCALES"as" || LOCALES"bn" || LOCALES"gu" || LOCALES"hi" || LOCALES"ja" || LOCALES"km" || LOCALES"kn" || LOCALES"ko" || LOCALES"ml" || LOCALES"mr" || LOCALES"ne" || LOCALES"pa_IN" || LOCALES"ta" || LOCALES"th" || LOCALES"vi" || LOCALES"zh" || LOCALES"zh_TW" fcitx-qt5
+
   4 vim-enhanced
 
   5 DRIVER"Tablet:wacom" x11-driver-input-wacom
